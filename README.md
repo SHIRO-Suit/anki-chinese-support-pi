@@ -39,8 +39,10 @@ To add the field:
 
 ## Screenshots
 
-![Screenshot #1](https://raw.githubusercontent.com/Gustaf-C/anki-chinese-support/master/screenshots/add-card.png)
+![MDBG Stroke Order](https://raw.githubusercontent.com/SHIRO-Suit/anki-chinese-support-pi/refs/heads/main/screenshots/Animation.gif)
 
-![Screenshot #2](https://raw.githubusercontent.com/Gustaf-C/anki-chinese-support/master/screenshots/view-card.png)
+![Light Theme](https://raw.githubusercontent.com/SHIRO-Suit/anki-chinese-support-pi/refs/heads/main/screenshots/light.png)
+
+![Dark Theme](https://raw.githubusercontent.com/SHIRO-Suit/anki-chinese-support-pi/refs/heads/main/screenshots/dark.png)
 
 <br>
