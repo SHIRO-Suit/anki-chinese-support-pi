@@ -1,6 +1,7 @@
 # Copyright © 2012-2015 Thomas TEMPÉ <thomas.tempe@alysse.org>
 # Copyright © 2017-2020 Joseph Lorimer <joseph@lorimer.me>
 # Copyright © 2020 Joe Minicucci <https://joeminicucci.com>
+# Copyright © 2025 Nicolas Corrieri <corrieripro@gmail.com>
 #
 # This file is part of Chinese Support 3.
 #
@@ -39,6 +40,7 @@ from .util import (
     hide,
     set_all,
 )
+from .stroke import get_stroke_order
 
 # FIXME: Do all these return values actually do anything?
 
@@ -322,6 +324,18 @@ def fill_all_rubies(hanzi, note):
     ]:
         fill_ruby(hanzi, note, trans_group, ruby_group)
 
+def fill_stroke_order(hanzi, note) -> bool:
+    if get_first(config['fields']['strokeOrder'], note) == '':
+        set_all(
+            config['fields']['strokeOrder'],
+            note,
+            to=get_stroke_order(hanzi),
+        )
+        return True
+
+    return False
+
+
 
 def update_fields(note, focus_field, fields):
     copy = dict(note)
@@ -355,6 +369,7 @@ def update_fields(note, focus_field, fields):
             fill_all_rubies(hanzi, copy)
             fill_silhouette(hanzi, copy)
             fill_usage(hanzi, copy)
+            fill_stroke_order(hanzi,copy)
         else:
             erase_fields(copy, config.get_fields())
     elif focus_field in config['fields']['pinyin']:
