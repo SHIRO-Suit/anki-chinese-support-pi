@@ -14,6 +14,10 @@ This readme focuses on this fork's features.
   - Stroke order gifs from [MDBG](https://www.mdbg.net/chinese/dictionary)
 - Enhanced dark mode support using [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for Light and Dark styles.
 
+## Installation
+
+You must use the `Add from file` button in Tools>Addons. I won't create an official anki addon number/page just for a minor fork.
+
 ## Usage
 
 To benefit from the stroke order self filling you'll need to add a "Stroke Order" or "笔顺" field in your `Chinese (Advanced)` type.
